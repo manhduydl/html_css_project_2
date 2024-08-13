@@ -4,6 +4,7 @@
 
 :root {
     --primary-color: #ffb900;
+    --heading-font: "Sen", sans-serif;
 }
 
 html {
@@ -44,6 +45,14 @@ a {
 
 .btn:hover {
     opacity: 0.9;
+}
+
+p.desc {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66;
 }
 
 /* header */
@@ -210,15 +219,6 @@ a {
     letter-spacing: -1.16px;
 }
 
-.hero .info-block .desc {
-    color: #5f5b53;
-    font-family: Poppins;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.66;
-}
-
 .hero .cta-group {
     display: flex;
     align-items: center;
@@ -270,9 +270,58 @@ a {
 .hero .stats strong {
     padding: 0 15px 0 28px;
     color: #171100;
-    font-family: Sen;
+    font-family: var(--heading-font);
     font-size: 4.4rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.22;
+}
+
+/* Popular */
+.popular {
+    margin: 200px 0;
+}
+
+.popular-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-top .info .sub-title {
+    margin-bottom: 16px;
+    color: #171100;
+    font-family: var(--heading-font);
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.76px;
+}
+
+.popular-top .desc {
+    width: 458px;
+}
+
+.popular-top .controls {
+    display: flex;
+    gap: 18px;
+}
+
+.popular-top .control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.popular-top .control-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
 }
