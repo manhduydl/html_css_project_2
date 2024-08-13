@@ -55,6 +55,23 @@ p.desc {
     line-height: 1.66;
 }
 
+.line-clamp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+}
+
+.line-clamp.max-line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
 /* header */
 .header {
     padding: 36px 0 12px;
@@ -366,6 +383,7 @@ p.desc {
 }
 
 .popular-item .title {
+    padding-right: 6px;
     color: #171100;
     font-size: 1.8rem;
     font-style: normal;
