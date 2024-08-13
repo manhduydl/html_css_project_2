@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #ffb900;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -34,8 +38,12 @@ a {
     font-weight: 600;
     line-height: 1.75;
 
-    border-radius: 25px;
+    border-radius: 999px;
     background: #171100;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 /* header */
@@ -107,10 +115,13 @@ a {
     background: #fffcf4;
 }
 
+.hero .body {
+    display: flex;
+}
+
 .hero .image-block {
     position: relative;
     width: 48%;
-    background-color: orange;
 }
 
 .hero .image-block .image {
@@ -181,4 +192,87 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: 1.66;
+}
+
+.hero .info-block {
+    width: 52%;
+    padding-left: 130px;
+}
+
+.hero .info-block .heading {
+    padding-bottom: 22px;
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+}
+
+.hero .info-block .desc {
+    color: #5f5b53;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66;
+}
+
+.hero .cta-group {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 38px 0 48px 0;
+}
+
+.hero .cta-group .hero-cta {
+    min-width: 180px;
+    padding: 17px 34px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.hero .watch-video {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.hero .watch-video .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.hero .stats {
+    margin-top: 8px;
+    margin-left: -28px;
+}
+
+.hero .stats strong {
+    padding: 0 15px 0 28px;
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.22;
 }
