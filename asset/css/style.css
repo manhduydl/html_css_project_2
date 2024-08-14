@@ -38,7 +38,6 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: 1.75;
-
     border-radius: 999px;
     background: #171100;
 }
@@ -47,12 +46,20 @@ a {
     opacity: 0.9;
 }
 
-p.desc {
+.desc {
     color: #5f5b53;
-    font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
+}
+
+.desc.level-1 {
+    font-size: 1.8rem;
     line-height: 1.66;
+}
+
+.desc.level-2 {
+    font-size: 1.4rem;
+    line-height: 1.85;
 }
 
 .line-clamp {
@@ -403,11 +410,6 @@ p.desc {
     font-style: normal;
     font-weight: 400;
     line-height: 1.75;
-}
-
-.popular-item .desc {
-    font-size: 1.4rem;
-    line-height: 1.85;
 }
 
 .popular-item .row-bottom {
